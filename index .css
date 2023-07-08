@@ -2,15 +2,30 @@
     margin: 0;
     box-sizing: border-box;
 	text-align: center;
+	
+	
+	
+
    
+}
+
+.total__div--margin {
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
 .header__container {
-    background: #8a4f7d;
+    background: #06d6a0;
     padding: 20px;
-	border-bottom:5px solid #88A096;
-	color: wheat;
+	border: 2cap solid #073B4C;
+	border-bottom:5px solid #073B4C;
+	color: #073B4C;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 }
 
 .total__section--container {
@@ -81,39 +96,54 @@
 	display: block;
 }
 
-.purchace__item--class {
-	display: flex;
-	justify-content: start;
-	position: relative;
-	
-	
-	
-	
-}
+
 
 .total__items--container {
 
-	margin-left: 9%;
+	margin-left: 7%;
+	
 
 }
+
+
 .purchase__order--total {
-	position: absolute;
-    right: 10px;
+	border-bottom: 1px solid #073B4C;
+	
 }
 
 .total-order {
 	display: flex;
 	justify-content: space-between;
-	margin: 10px;
+	padding: 10px;
+	
+	
 	
 }
 
+.total-order1 {
+	background-color:#06d6a0;
+	padding: 10px;
+	border: 1px solid black;
+	border-top: 5px solid #073B4C;
+	border-radius: 0 0 10px 10px;
+
+
+}
 .purchase__container {
 	text-align: center;
+	position: relative;
+}
+
+.total__order--total {
+	border-bottom: 1px solid #073B4C;
+}
+
+.total__order--amount {
+	border-bottom: 1px solid #073B4C;
 }
 
 .puchase__order--item {
-	min-width: 100px;
+	min-width: 50px;
 }
 
 .remove {
@@ -128,10 +158,17 @@
 
 .purchace__item--class {
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 	margin: 10px;
+	background: rgb(224, 224, 224);
+	padding: 10px;
+	justify-content: space-around;
+	flex-grow: inherit;
+	border-radius: 10px;
 
 }
+
+
 
 /* making remove same size */
 
@@ -152,20 +189,23 @@
 /* style buttons */
 
 .btn {
-	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
-	background:linear-gradient(to bottom, #88A096 5%, #8A4F7D 100%);
-	background-color:#8A4F7D;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	
+	background-color:#06d6a0;
+	border: none;
 	border-radius: 10px;
-	color: white;
-	padding: 10px 5px;
+	color: #073B4C;
+	padding: 5px 5px;
+	
+	border: #06d69ede 1px solid;
 
 }
 
 
 .btn:hover {
-	background:linear-gradient(to bottom, #887880 5%, #88A096 100%);
-	background-color:#887880;
+	
+	background-color:#067558;
+	color: #FFFFFF;
 }
 .btn:active {
 	position:relative;
@@ -181,28 +221,42 @@
 	background-color: #88A096;
 	margin: auto;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .modal {
 	position: fixed;
 	width: 50%;
 	height: 50%;
+	top: 50%;
+	left: 50%;
+	margin-top: -25%; 
+	margin-left: -25%; 
 	border: 1px solid;
 	margin: auto auto;
-	top: 25%;
-	left: 25%;
-	background: #8a4f7d;
+	top: 20%;
+	left: 20%;
+	background: #06d6a0;
 	display: none;
-	box-shadow: 15px 0px 400px 106px rgba(245,108,108,0.94);
--webkit-box-shadow: 15px 0px 400px 106px rgba(245,108,108,0.94);
--moz-box-shadow: 15px 0px 400px 106px rgba(245,108,108,0.94);
-
+	box-shadow: 15px 0px 400px 106px rgba(8, 117, 22, 0.94);
+-webkit-box-shadow: 15px 0px 400px 106px rgba(8, 117, 22, 0.94);
+-moz-box-shadow: 15px 0px 400px 106px rgba(8, 117, 22, 0.94);
+	font-weight: bolder;
 
 }
 
 .modal p, h1 {
 	padding: 10px;
-	color:#fc8d83;
+	color: #073B4C;
+	
+}
+
+.modal h1 {
+	font-size: 40px;
+}
+
+.modal p {
+	font-size: 20px;
 }
 
 .qnt__par {
@@ -213,18 +267,18 @@
 	.qnt__par {
 	 display:none
 	}
+
+	
   }
 
   .purchase_btn {
 	
   background-color: initial;
-  background-image: linear-gradient(-180deg, #8A4F7D, #5c2e52 );
+  
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
   color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+	background-color: #073B4C;
   height: 44px;
   line-height: 44px;
   outline: 0;
@@ -233,17 +287,20 @@
   pointer-events: auto;
   position: relative;
   text-align: center;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: top;
-  white-space: nowrap;
   width: 100%;
   z-index: 9;
   border: 0;
+  width: 40%;
+
+  
 }
 
 .purchase_btn:hover {
-  background: #8A4F7D;
+  background: #af2525;
 }
   
+.btn-back {
+	font-size: 20px;
+	background-color: #073B4C;
+	color: #ffffff;
+}

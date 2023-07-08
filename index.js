@@ -349,29 +349,6 @@ function addingFromCart(event, adding) {
 
 
 
-/* add button function 
-
-const addBtnZero = document.getElementById("0")
-const addBtnOne = document.getElementById("1")
-const addBtnTwo = document.getElementById("2")
-const addBtnThree = document.getElementById("3")
-
-
-addBtnZero.addEventListener("click",function(menuitem) {
-
-  PurchaseEl.innerHTML = `
-  <div class="purchace__item--class" id="purchace__item--class">
-   <p class="puchase__order--item">${menuitem.name}</p>
-   <p class="purchase__order--remove">Remove</p>
-  <P class="purchase__order--total">12.99</P>
-  </div>
-  
-  
-  `})
-// i deleted curly braces and ending for above statement
-
-*/
-
 
 
 // removing items from cart 
