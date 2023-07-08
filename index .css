@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+	text-align: center;
+   
+}
+
+
+.header__container {
+    background: #8a4f7d;
+    padding: 20px;
+	border-bottom:5px solid #88A096;
+	color: wheat;
+}
+
+.total__section--container {
+    text-align: center;
+}
+
+
+
+/* item shaper */
+
+.item {
+    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+
+
+.item__add {
+    position: absolute;
+    right: 10px;
+}
+
+.item__text {
+    width: 50%;
+}
+/* Emoji */
+.emoji__icon {
+    width: 50px;
+    height: 100%;
+}
+
+/* button */
+.myButton {
+	box-shadow: 0px 4px 7px -5px #000000;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:9px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* purchase box */
+
+/*.purchase__container {
+    display: none;
+} */
+
+.show {
+	display: block;
+}
+
+.purchace__item--class {
+	display: flex;
+	justify-content: start;
+	position: relative;
+	
+	
+	
+	
+}
+
+.total__items--container {
+
+	margin-left: 9%;
+
+}
+.purchase__order--total {
+	position: absolute;
+    right: 10px;
+}
+
+.total-order {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+	
+}
+
+.purchase__container {
+	text-align: center;
+}
+
+.puchase__order--item {
+	min-width: 100px;
+}
+
+.remove {
+	display: none;
+}
+
+.opacitiy {
+	opacity: 0.5;
+}
+
+/* cart sytle */
+
+.purchace__item--class {
+	display: flex;
+	gap: 10px;
+	margin: 10px;
+
+}
+
+/* making remove same size */
+
+#remove1 {
+	margin-left: -5px;
+	display: inline-block;
+}
+
+#remove2 {
+	margin-left: -4px;
+	display: inline-block;
+}
+#remove3 {
+	margin-left: -3px;
+	display: inline-block;
+}
+
+/* style buttons */
+
+.btn {
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #88A096 5%, #8A4F7D 100%);
+	background-color:#8A4F7D;
+	
+	border-radius: 10px;
+	color: white;
+	padding: 10px 5px;
+
+}
+
+
+.btn:hover {
+	background:linear-gradient(to bottom, #887880 5%, #88A096 100%);
+	background-color:#887880;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* divider */
+
+.divider {
+	width: 20%;
+	height: 2px;
+	background-color: #88A096;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.modal {
+	position: fixed;
+	width: 50%;
+	height: 50%;
+	border: 1px solid;
+	margin: auto auto;
+	top: 25%;
+	left: 25%;
+	background: #8a4f7d;
+	display: none;
+	box-shadow: 15px 0px 400px 106px rgba(245,108,108,0.94);
+-webkit-box-shadow: 15px 0px 400px 106px rgba(245,108,108,0.94);
+-moz-box-shadow: 15px 0px 400px 106px rgba(245,108,108,0.94);
+
+
+}
+
+.modal p, h1 {
+	padding: 10px;
+	color:#fc8d83;
+}
+
+.qnt__par {
+	display:inline
+   }
+
+@media screen and (max-width: 480px) {
+	.qnt__par {
+	 display:none
+	}
+  }
+
+  .purchase_btn {
+	
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #8A4F7D, #5c2e52 );
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+}
+
+.purchase_btn:hover {
+  background: #8A4F7D;
+}
+  
